@@ -1,7 +1,7 @@
 # NetworkDriver
 Implementación de un controlador de red en C++ que utiliza sockets para facilitar la comunicación eficiente entre un servidor y un cliente a través de una red (protocolo TCP). 
 
-## Descripcion:
+## Descripción:
 Este proyecto implementa un controlador de red en C++ que utiliza sockets para facilitar la comunicación eficiente entre un servidor y un cliente a través de una red.
 ## Caracteristicas:
 ### Caracteristicas generales:
@@ -19,12 +19,12 @@ Este proyecto implementa un controlador de red en C++ que utiliza sockets para f
 
 ![arquitectura](/../main/imagenes/arquitectura_servidor_cliente.jpg)
 
-> Del lado del servidor, primero se debe crear un socket, que se puede crear mediante la funcion socket(). Luego se configura la direccion del servidor para posteriormente vincular al puerto utilizando bind(). 
-Una vez creado el socket y conectado la direccion ip y el puerto, se llama a la funcion listen() para eschuchar las solicitudes de conexion de otros programas (cliente). Cuando un cliente solicita una conexion con el servidor, necesita utilizar la funcion accept() para aceptar la solicitud de conexion y devolver un nuevo socket.
-Una vez establecida la conexion, el servidor y el cliente pueden enviar y recibir datos entre ellos, lo que se puede lograr utilizando las funciones send() y recv().
-Una vez completada la transferencia de datos, se debe cerrar la conexion con la funcion close().
+> Del lado del servidor, primero se debe crear un socket, que se puede crear mediante la funcion socket(). Luego se configura la dirección del servidor para posteriormente vincular al puerto utilizando bind(). 
+Una vez creado el socket y conectado la dirección ip y el puerto, se llama a la funcion listen() para eschuchar las solicitudes de conexión de otros programas (cliente). Cuando un cliente solicita una conexión con el servidor, necesita utilizar la función accept() para aceptar la solicitud de conexión y devolver un nuevo socket.
+Una vez establecida la conexión, el servidor y el cliente pueden enviar y recibir datos entre ellos, lo que se puede lograr utilizando las funciones send() y recv().
+Una vez completada la transferencia de datos, se debe cerrar la conexión con la funcion close().
 
-### Tecnologias utilizadas
+### Tecnologías utilizadas
 - Visual Studio Code
 - g++ (compilador de c++)
 - C/C++ (extension de vs code)
@@ -44,7 +44,7 @@ Una vez completada la transferencia de datos, se debe cerrar la conexion con la 
 > [Beej's Guide to Network Programming. Using Internet Sockets](https://beej.us/guide/bgnet/)
 
 
-### Compilacion
+### Compilación
 Compilar el servidor
 ```
 g++ server.cpp -o server
@@ -53,7 +53,7 @@ Compilar el cliente
 ```
 g++ client.cpp -o client
 ```
-### Ejecucion
+### Ejecución
 1. Ejecuta el servidor
 ```
 ./server
