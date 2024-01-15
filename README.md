@@ -7,7 +7,7 @@ Este proyecto implementa un controlador de red en C++ que utiliza sockets para f
 ### Caracteristicas generales:
 1. Comunicacion cliente-servidor: Establece una conexión bidireccional entre un servidor y un cliente mediante sockets.
 2. Manejo de errores: Incluye manejo básico de errores para situaciones como la creación del socket, la vinculación del servidor, la escucha de solicitudes y la aceptación de conexiones.
-3. Uso de sockets: Utiliza la API de sockets para la comunicación, con funciones como socket, bind, listen, accept, send, y recv.
+3. Uso de sockets: Utiliza la librería de sockets para la comunicación, con funciones como socket, bind, listen, accept, send, y recv.
 ### Caracteristicas del servidor:
 1. Espera de conexiones entrantes: El servidor está en un bucle infinito esperando y aceptando conexiones entrantes de clientes.
 2. Recepcion y envio de datos: Recibe datos del cliente utilizando la función recv y envía una respuesta predefinida al cliente usando la función send.
@@ -38,7 +38,7 @@ Una vez completada la transferencia de datos, se debe cerrar la conexion con la 
 - __sys/socket.h__ (funciones para programar con sockets [socket, bind, listen, accept, recv, etc.])
 - __unistd.h__ (funciones relacionadas con el sistema operativo [close, etc])
 
-### Documentaciones
+### Documentaciones y guías:
 > [c++](https://en.cppreference.com/w/)
 
 > [Beej's Guide to Network Programming. Using Internet Sockets](https://beej.us/guide/bgnet/)
